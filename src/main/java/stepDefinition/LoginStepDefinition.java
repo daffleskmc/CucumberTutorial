@@ -29,11 +29,11 @@ public class LoginStepDefinition {
 		Assert.assertTrue(signinBtn.isDisplayed());
 	}
 
-	@Then("^user enters email and password$")
-	public void user_enters_email_and_password() {
+	@Then("^user enters \"(.*)\" and \"(.*)\"$")
+	public void user_enters_email_and_password(String username, String password) {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("daffles4@gmail.com");
-		driver.findElement(By.xpath("//input[@id='passwd']")).sendKeys("123456");
+		driver.findElement(By.xpath("//input[@id='email']")).sendKeys(username);
+		driver.findElement(By.xpath("//input[@id='passwd']")).sendKeys(password);
 	}
 
 	@Then("^user clicks sign in button$")
@@ -94,4 +94,8 @@ public class LoginStepDefinition {
 				.click();
 	}
 
+	@Then("^close the broswer$")
+	public void close_the_broswer() {
+		driver.quit();
+	}
 }

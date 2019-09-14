@@ -1,0 +1,242 @@
+[
+  {
+    "comments": [
+      {
+        "line": 2,
+        "value": "# Note: This is my test for login and shopping of dress."
+      },
+      {
+        "line": 3,
+        "value": "# Didn\u0027t separate into a different feature since I still don\u0027t know how to run multiple features."
+      }
+    ],
+    "line": 5,
+    "elements": [
+      {
+        "line": 20,
+        "name": "ECom Login Test Cases",
+        "description": "",
+        "id": "ecom-login-feature;ecom-login-test-cases;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user is already in login page",
+            "match": {
+              "location": "LoginStepDefinition.user_already_in_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "the sign in button displays",
+            "match": {
+              "location": "LoginStepDefinition.signin_btn_displays()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user enters \"daffles4@gmail.com\" and \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "daffles4@gmail.com",
+                  "offset": 13
+                },
+                {
+                  "val": "123456",
+                  "offset": 38
+                }
+              ],
+              "location": "LoginStepDefinition.user_enters_email_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_sign_in_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user hovers chiffon dress",
+            "match": {
+              "location": "LoginStepDefinition.user_hovers_chiffon_dress()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user adds to cart the chiffon dress",
+            "match": {
+              "location": "LoginStepDefinition.user_adds_to_cart_the_chiffon_dress()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "close the broswer",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "ECom Login Test Cases",
+        "description": "",
+        "id": "ecom-login-feature;ecom-login-test-cases;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user is already in login page",
+            "match": {
+              "location": "LoginStepDefinition.user_already_in_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "the sign in button displays",
+            "match": {
+              "location": "LoginStepDefinition.signin_btn_displays()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user enters \"daffles5@gmail.com\" and \"123456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "daffles5@gmail.com",
+                  "offset": 13
+                },
+                {
+                  "val": "123456",
+                  "offset": 38
+                }
+              ],
+              "location": "LoginStepDefinition.user_enters_email_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user clicks sign in button",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_sign_in_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user hovers chiffon dress",
+            "match": {
+              "location": "LoginStepDefinition.user_hovers_chiffon_dress()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user adds to cart the chiffon dress",
+            "match": {
+              "location": "LoginStepDefinition.user_adds_to_cart_the_chiffon_dress()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "close the broswer",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "ECom Login Feature",
+    "description": "",
+    "id": "ecom-login-feature",
+    "keyword": "Feature",
+    "uri": "C:/Users/indeztruk/eclipse-workspace/CucumberTutorial/src/main/java/features/login.feature"
+  }
+]
