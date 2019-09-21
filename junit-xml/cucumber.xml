@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0">
 <testcase classname="ECom Login Feature" name="ECom Login Test Cases" time="0">
-<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given user is already in login page.........................................skipped
-When the sign in button displays............................................skipped
-Then user enters "daffles4@gmail.com" and "123456"..........................skipped
-Then user clicks sign in button.............................................skipped
-Then user is on home page...................................................skipped
-Then user hovers chiffon dress..............................................skipped
-Then user adds to cart the chiffon dress....................................skipped
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given user is already in login page.........................................undefined
+When the sign in button displays............................................undefined
+Then user enters "daffles4@gmail.com" and "123456"..........................undefined
+Then user clicks sign in button.............................................undefined
+Then user is on home page...................................................undefined
+Then user hovers chiffon dress..............................................undefined
+Then user adds to cart the chiffon dress....................................undefined
 Then close the broswer......................................................undefined
 ]]></failure>
 </testcase>
 <testcase classname="ECom Login Feature" name="ECom Login Test Cases 2" time="0">
-<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given user is already in login page.........................................skipped
-When the sign in button displays............................................skipped
-Then user enters "daffles5@gmail.com" and "123456"..........................skipped
-Then user clicks sign in button.............................................skipped
-Then user is on home page...................................................skipped
-Then user hovers chiffon dress..............................................skipped
-Then user adds to cart the chiffon dress....................................skipped
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given user is already in login page.........................................undefined
+When the sign in button displays............................................undefined
+Then user enters "daffles5@gmail.com" and "123456"..........................undefined
+Then user clicks sign in button.............................................undefined
+Then user is on home page...................................................undefined
+Then user hovers chiffon dress..............................................undefined
+Then user adds to cart the chiffon dress....................................undefined
 Then close the broswer......................................................undefined
 ]]></failure>
 </testcase>

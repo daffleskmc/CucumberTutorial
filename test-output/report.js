@@ -1,316 +1,112 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/indeztruk/eclipse-workspace/CucumberTutorial/src/main/java/features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/indeztruk/eclipse-workspace/CucumberTutorial/src/main/java/features/loginNinjaSite.feature");
 formatter.feature({
-  "comments": [
-    {
-      "line": 2,
-      "value": "# Note: This is my test for login and shopping of dress."
-    },
-    {
-      "line": 3,
-      "value": "# Didn\u0027t separate into a different feature since I still don\u0027t know how to run multiple features."
-    }
-  ],
-  "line": 5,
-  "name": "ECom Login Feature",
+  "line": 1,
+  "name": "Login Ninja Site Feature",
   "description": "",
-  "id": "ecom-login-feature",
+  "id": "login-ninja-site-feature",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "line": 8,
-  "name": "ECom Login Test Cases",
+formatter.scenario({
+  "line": 3,
+  "name": "Login Ninja Site Test Scenario",
   "description": "",
-  "id": "ecom-login-feature;ecom-login-test-cases",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "id": "login-ninja-site-feature;login-ninja-site-test-scenario",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 9,
-  "name": "user is already in login page",
+  "line": 5,
+  "name": "user is in main page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 10,
-  "name": "the sign in button displays",
+  "line": 6,
+  "name": "user sees login button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 11,
-  "name": "user enters \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "user clicks sign in button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "user is on home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 14,
-  "name": "user hovers chiffon dress",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 15,
-  "name": "user adds to cart the chiffon dress",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 16,
-  "name": "close the broswer",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 18,
-  "name": "",
-  "description": "",
-  "id": "ecom-login-feature;ecom-login-test-cases;",
+  "line": 7,
+  "name": "user enters email and password",
   "rows": [
     {
       "cells": [
-        "username",
+        "email",
         "password"
       ],
-      "line": 19,
-      "id": "ecom-login-feature;ecom-login-test-cases;;1"
+      "line": 8
     },
     {
       "cells": [
-        "daffles4@gmail.com",
-        "123456"
+        "red.win@yahoo.com",
+        "test1234"
       ],
-      "line": 20,
-      "id": "ecom-login-feature;ecom-login-test-cases;;2"
+      "line": 9
     },
     {
       "cells": [
-        "daffles5@gmail.com",
-        "123456"
+        "trip.view@yahoo.com",
+        "test1234"
       ],
-      "line": 21,
-      "id": "ecom-login-feature;ecom-login-test-cases;;3"
+      "line": 10
     }
   ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 20,
-  "name": "ECom Login Test Cases",
-  "description": "",
-  "id": "ecom-login-feature;ecom-login-test-cases;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 9,
-  "name": "user is already in login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 10,
-  "name": "the sign in button displays",
-  "keyword": "When "
+  "keyword": "Then "
 });
 formatter.step({
   "line": 11,
-  "name": "user enters \"daffles4@gmail.com\" and \"123456\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
+  "name": "user clicks login button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 12,
-  "name": "user clicks sign in button",
+  "name": "user is now in home page",
   "keyword": "Then "
 });
 formatter.step({
   "line": 13,
-  "name": "user is on home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 14,
-  "name": "user hovers chiffon dress",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 15,
-  "name": "user adds to cart the chiffon dress",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 16,
-  "name": "close the broswer",
+  "name": "close the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_already_in_login_page()"
+  "location": "LoginNinjaTestStepDefinition.user_is_in_main_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 9898119900,
+  "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.signin_btn_displays()"
+  "location": "LoginNinjaTestStepDefinition.user_sees_login_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 68071400,
+  "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "daffles4@gmail.com",
-      "offset": 13
-    },
-    {
-      "val": "123456",
-      "offset": 38
-    }
-  ],
-  "location": "LoginStepDefinition.user_enters_email_and_password(String,String)"
+  "location": "LoginNinjaTestStepDefinition.user_enters_email_and_password(DataTable)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 409903100,
+  "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_clicks_sign_in_button()"
+  "location": "LoginNinjaTestStepDefinition.user_clicks_login_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 386257200,
+  "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_is_on_home_page()"
+  "location": "LoginNinjaTestStepDefinition.user_is_now_in_home_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 38639900,
+  "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_hovers_chiffon_dress()"
+  "location": "LoginNinjaTestStepDefinition.close_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_adds_to_cart_the_chiffon_dress()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.scenario({
-  "line": 21,
-  "name": "ECom Login Test Cases",
-  "description": "",
-  "id": "ecom-login-feature;ecom-login-test-cases;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 9,
-  "name": "user is already in login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 10,
-  "name": "the sign in button displays",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "user enters \"daffles5@gmail.com\" and \"123456\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "user clicks sign in button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "user is on home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 14,
-  "name": "user hovers chiffon dress",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 15,
-  "name": "user adds to cart the chiffon dress",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 16,
-  "name": "close the broswer",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_already_in_login_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginStepDefinition.signin_btn_displays()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "daffles5@gmail.com",
-      "offset": 13
-    },
-    {
-      "val": "123456",
-      "offset": 38
-    }
-  ],
-  "location": "LoginStepDefinition.user_enters_email_and_password(String,String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_clicks_sign_in_button()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_is_on_home_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_hovers_chiffon_dress()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_adds_to_cart_the_chiffon_dress()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+  "duration": 723477800,
+  "status": "passed"
 });
 });

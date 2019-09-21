@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="11.524469">
+<testcase classname="Login Ninja Site Feature" name="Login Ninja Site Test Scenario" time="11.524469">
+<system-out><![CDATA[Given user is in main page..................................................passed
+When user sees login button.................................................passed
+Then user enters email and password.........................................passed
+Then user clicks login button...............................................passed
+Then user is now in home page...............................................passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
