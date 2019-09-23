@@ -1,112 +1,78 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/indeztruk/eclipse-workspace/CucumberTutorial/src/main/java/features/loginNinjaSite.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/indeztruk/eclipse-workspace/CucumberTutorial/src/main/java/features/tagging.feature");
 formatter.feature({
   "line": 1,
-  "name": "Login Ninja Site Feature",
+  "name": "this is a test for tagging",
   "description": "",
-  "id": "login-ninja-site-feature",
+  "id": "this-is-a-test-for-tagging",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 3,
-  "name": "Login Ninja Site Test Scenario",
+  "line": 8,
+  "name": "login incorrectly",
   "description": "",
-  "id": "login-ninja-site-feature;login-ninja-site-test-scenario",
+  "id": "this-is-a-test-for-tagging;login-incorrectly",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 7,
+      "name": "@RegressionTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 9,
+  "name": "invalid login",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "TaggingStepDefinition.invalid_login()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 12,
+  "name": "create account correctly",
+  "description": "",
+  "id": "this-is-a-test-for-tagging;create-account-correctly",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 11,
+      "name": "@End2EndTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 13,
+  "name": "valid create account",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "TaggingStepDefinition.valid_create_account()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 15,
+  "name": "create account incorrectly",
+  "description": "",
+  "id": "this-is-a-test-for-tagging;create-account-incorrectly",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 5,
-  "name": "user is in main page",
+  "line": 16,
+  "name": "invalid create account",
   "keyword": "Given "
 });
-formatter.step({
-  "line": 6,
-  "name": "user sees login button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 7,
-  "name": "user enters email and password",
-  "rows": [
-    {
-      "cells": [
-        "email",
-        "password"
-      ],
-      "line": 8
-    },
-    {
-      "cells": [
-        "red.win@yahoo.com",
-        "test1234"
-      ],
-      "line": 9
-    },
-    {
-      "cells": [
-        "trip.view@yahoo.com",
-        "test1234"
-      ],
-      "line": 10
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "user clicks login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "user is now in home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "close the browser",
-  "keyword": "Then "
-});
 formatter.match({
-  "location": "LoginNinjaTestStepDefinition.user_is_in_main_page()"
+  "location": "TaggingStepDefinition.invalid_create_account()"
 });
 formatter.result({
-  "duration": 9898119900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginNinjaTestStepDefinition.user_sees_login_button()"
-});
-formatter.result({
-  "duration": 68071400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginNinjaTestStepDefinition.user_enters_email_and_password(DataTable)"
-});
-formatter.result({
-  "duration": 409903100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginNinjaTestStepDefinition.user_clicks_login_button()"
-});
-formatter.result({
-  "duration": 386257200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginNinjaTestStepDefinition.user_is_now_in_home_page()"
-});
-formatter.result({
-  "duration": 38639900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginNinjaTestStepDefinition.close_the_browser()"
-});
-formatter.result({
-  "duration": 723477800,
-  "status": "passed"
+  "status": "skipped"
 });
 });

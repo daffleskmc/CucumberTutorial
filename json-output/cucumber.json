@@ -3,115 +3,85 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
-        "name": "Login Ninja Site Test Scenario",
+        "line": 8,
+        "name": "login incorrectly",
         "description": "",
-        "id": "login-ninja-site-feature;login-ninja-site-test-scenario",
+        "id": "this-is-a-test-for-tagging;login-incorrectly",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 9898119900,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 5,
-            "name": "user is in main page",
+            "line": 9,
+            "name": "invalid login",
             "match": {
-              "location": "LoginNinjaTestStepDefinition.user_is_in_main_page()"
+              "location": "TaggingStepDefinition.invalid_login()"
             },
             "keyword": "Given "
-          },
+          }
+        ],
+        "tags": [
           {
-            "result": {
-              "duration": 68071400,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user sees login button",
-            "match": {
-              "location": "LoginNinjaTestStepDefinition.user_sees_login_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 409903100,
-              "status": "passed"
-            },
             "line": 7,
-            "name": "user enters email and password",
-            "match": {
-              "location": "LoginNinjaTestStepDefinition.user_enters_email_and_password(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "email",
-                  "password"
-                ],
-                "line": 8
-              },
-              {
-                "cells": [
-                  "red.win@yahoo.com",
-                  "test1234"
-                ],
-                "line": 9
-              },
-              {
-                "cells": [
-                  "trip.view@yahoo.com",
-                  "test1234"
-                ],
-                "line": 10
-              }
-            ],
-            "keyword": "Then "
-          },
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "create account correctly",
+        "description": "",
+        "id": "this-is-a-test-for-tagging;create-account-correctly",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
-              "duration": 386257200,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user clicks login button",
-            "match": {
-              "location": "LoginNinjaTestStepDefinition.user_clicks_login_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 38639900,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user is now in home page",
-            "match": {
-              "location": "LoginNinjaTestStepDefinition.user_is_now_in_home_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 723477800,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 13,
-            "name": "close the browser",
+            "name": "valid create account",
             "match": {
-              "location": "LoginNinjaTestStepDefinition.close_the_browser()"
+              "location": "TaggingStepDefinition.valid_create_account()"
             },
-            "keyword": "Then "
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@End2EndTest"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "create account incorrectly",
+        "description": "",
+        "id": "this-is-a-test-for-tagging;create-account-incorrectly",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "invalid create account",
+            "match": {
+              "location": "TaggingStepDefinition.invalid_create_account()"
+            },
+            "keyword": "Given "
           }
         ]
       }
     ],
-    "name": "Login Ninja Site Feature",
+    "name": "this is a test for tagging",
     "description": "",
-    "id": "login-ninja-site-feature",
+    "id": "this-is-a-test-for-tagging",
     "keyword": "Feature",
-    "uri": "C:/Users/indeztruk/eclipse-workspace/CucumberTutorial/src/main/java/features/loginNinjaSite.feature"
+    "uri": "C:/Users/indeztruk/eclipse-workspace/CucumberTutorial/src/main/java/features/tagging.feature"
   }
 ]

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0">
+<testcase classname="this is a test for tagging" name="login incorrectly" time="0">
+<system-out><![CDATA[Given invalid login.........................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="this is a test for tagging" name="create account correctly" time="0">
+<system-out><![CDATA[Given valid create account..................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="this is a test for tagging" name="create account incorrectly" time="0">
+<system-out><![CDATA[Given invalid create account................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
